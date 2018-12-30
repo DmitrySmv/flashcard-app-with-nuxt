@@ -1,3 +1,9 @@
+const path = require('path');
+
 module.exports = {
-  mode: 'spa'
+  mode: 'spa',
+  srcDir: path.resolve(__dirname, 'client'),
+  css: [
+    '~/assets/main.css',
+  ]
 }
