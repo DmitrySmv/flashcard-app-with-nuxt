@@ -1,5 +1,5 @@
 {
-  "name": "flashcard-app",
+  "name": "flashcard-app-with-fastify-and-nuxt",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
