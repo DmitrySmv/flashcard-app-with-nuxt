@@ -1,6 +1,13 @@
+const testDecks = [
+  {
+    id: 1,
+    name: 'English'
+  }
+];
+
 export const state = () => ({
   adding: false,
-  list: []
+  list: testDecks
 })
 
 export const mutations = {
