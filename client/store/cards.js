@@ -1,12 +1,21 @@
+const mockCards = [
+  {
+    id: 1,
+    deckId: 1,
+    front: 'milk',
+    back: 'молоко'
+  }
+];
+
 export const state = () => ({
-  list: []
+  list: mockCards
 })
 
 export const mutations = {
   add (state, { deckId, front, back }) {
     state.list.push({
       id: state.list.length + 1,
-      deckId,
+      deckId: Number(deckId),
       front,
       back
     })
