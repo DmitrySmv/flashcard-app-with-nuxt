@@ -1,13 +1,16 @@
 <template>
-  <new-card-modal :deck-id="deckId" />
+  <card-modal
+    header="New Card"
+    :deck-id="deckId"
+  />
 </template>
 
 <script>
-import NewCardModal from '~/components/NewCardModal.vue';
+import CardModal from '~/components/CardModal.vue';
 
 export default {
   components: {
-    NewCardModal
+    CardModal
   },
   computed: {
     deckId() {
