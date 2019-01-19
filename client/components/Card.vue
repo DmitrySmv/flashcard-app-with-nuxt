@@ -2,7 +2,7 @@
   <div class='card'>
     <div>
       <p>{{front}}</p>
-      <nuxt-link class='btn' :to="`/deck/${deckId}/edit/${id}`">Edit</nuxt-link>
+      <nuxt-link class='btn' :to="`/deck/${deckId}/card/${id}/edit`">Edit</nuxt-link>
     </div>
   </div>
 </template>
