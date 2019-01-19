@@ -1,6 +1,6 @@
 <template>
   <div>Deck '{{ deck.name }}'
-    <new-card-modal :deck-id="deck.id" />
+    <nuxt-child />
   </div>
 </template>
 
