@@ -5,12 +5,7 @@
 </template>
 
 <script>
-import NewCardModal from '~/components/new-card-modal';
-
 export default {
-  components: {
-    NewCardModal
-  },
   computed: {
     deck() {
       const deckId = Number(this.$route.params.id);

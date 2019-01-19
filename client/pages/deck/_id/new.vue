@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import NewCardModal from '~/components/new-card-modal';
+import NewCardModal from '~/components/NewCardModal.vue';
 
 export default {
   components: {

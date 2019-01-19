@@ -1,7 +1,7 @@
 <template>
   <div class="app">
-    <app-toolbar/>
-    <app-sidebar/>
+    <toolbar />
+    <sidebar />
     <div class="main">
       <nuxt />
     </div>
@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import AppToolbar from "~/components/app-toolbar";
-import AppSidebar from "~/components/app-sidebar";
+import Toolbar from "~/components/Toolbar.vue";
+import Sidebar from "~/components/Sidebar.vue";
 
 export default {
-  components: { AppToolbar, AppSidebar }
+  components: { Toolbar, Sidebar }
 };
 </script>
