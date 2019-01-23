@@ -3,7 +3,9 @@ const mockCards = [
     id: 1,
     deckId: 1,
     front: 'milk',
-    back: 'молоко'
+    back: 'молоко',
+    score: 1,
+    lastStudiedOn: null
   }
 ];
 
@@ -17,14 +19,18 @@ export const mutations = {
       id: state.list.length + 1,
       deckId: Number(deckId),
       front,
-      back
+      back,
+      score: 1,
+      lastStudiedOn: null
     });
   },
-  update(state, { id, deckId, front, back }) {
+  update(state, { id, deckId, front, back, score, lastStudiedOn }) {
     state.list = state.list.map(card => {
       if (card.id === id && card.deckId === deckId) {
-        card.front = front;
-        card.back = back;
+        card.front = front || card.front;
+        card.back = back || card.back;
+        card.score = score || card.score;
+        card.lastStudiedOn = lastStudiedOn || card.lastStudiedOn;
       }
 
       return card;
