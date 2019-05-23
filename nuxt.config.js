@@ -1,8 +1,6 @@
-const path = require('path');
-
 module.exports = {
+  dev: process.env.NODE_ENV !== 'production',
   mode: 'spa',
-  srcDir: path.resolve(__dirname, 'client'),
   css: [
     '~/assets/main.css',
   ]

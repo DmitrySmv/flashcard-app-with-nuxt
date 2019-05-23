@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "fastify start -w --ignore-watch='.nuxt node_modules .git client' -l info -P app.js"
+    "dev": "nuxt"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "2.0.0-rc.4",
-    "fastify-plugin": "1.4.0",
-    "nuxt": "2.3.4"
+    "nuxt": "2.7.1"
   }
 }
